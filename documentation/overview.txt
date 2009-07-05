@@ -1,0 +1,13 @@
+===================
+Django remember_me
+===================
+
+
+*this document is in progress*
+
+This is a replacement for Django_'s `django.contrib.auth.views.login`_, that
+adds a Remember Me feature to the login form.
+
+.. _Django: http://www.djangoproject.com/
+.. _views.login documentation: http://docs.djangoproject.com/en/dev/topics/auth/#django.contrib.auth.login
+
