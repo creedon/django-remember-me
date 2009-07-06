@@ -2,8 +2,8 @@
 Django remember_me
 ===================
 
-This is a Django login form that adds a Remember Me checkbox.  Use this
-application in place of `django.contrib.auth.views.login`. It requires a 
+A Django application that provides a login form with a Remember Me checkbox.
+Use this in place of `django.contrib.auth.views.login`. It requires a 
 functional installation of Django v1.0 or newer, but has no other dependencies.
 
 For installation instructions, how to use this application, and on what it

@@ -3,7 +3,7 @@ from distutils.core import setup
 setup (
     name = 'django-remember_me',
     version = '0.1',
-    description = 'Django login form that adds a Remember Me checkbox.',
+    description = 'A Django application that provides a login form with a Remember Me checkbox.',
     author = 'creecode',
     author_email = 'creecode@gmail.com',
     url = 'http://code.google.com/p/django-remember-me/',
