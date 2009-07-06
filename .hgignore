@@ -3,3 +3,5 @@ syntax: glob
 *.xcodeproj
 .DS_Store
 build/*
+dist
+MANIFEST

@@ -59,7 +59,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 Portions of this software were cribbed from
-< http://bitbucket.org/ubernostrum/django-registration/src/tip/docs/overview.txt >
+< http://bitbucket.org/ubernostrum/django-registration/src/tip/docs/ >
 and are under the following license.
 
 Copyright (c) 2007-2008, James Bennett

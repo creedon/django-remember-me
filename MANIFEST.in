@@ -1,0 +1,5 @@
+include CREDITS.txt
+include LICENSE.txt
+include README.txt
+recursive-include documentation *
+global-exclude .DS_Store
