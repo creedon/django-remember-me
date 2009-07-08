@@ -7,6 +7,7 @@ class AuthenticationRememberMeForm ( AuthenticationForm ):
 
     """
     Subclass of Django ``AuthenticationForm`` which adds a remember me checkbox.
+    
     """
     
     remember_me = forms.BooleanField (

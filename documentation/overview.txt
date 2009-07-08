@@ -62,14 +62,14 @@ able to type::
 And you'll be done.
 
 
-Manually installing the v0.1 package
+Manually installing the v0.1.1 package
 -----------------------------------
 
 If you'd prefer to do things the old-fashioned way, you can manually download
-the `django-remember_me v0.1 package`_ from the Python Package Index. This will
-get you a file named "django-remember_me-0.1.tar.gz" which you can unpack
+the `django-remember_me v0.1.1 package`_ from the Python Package Index. This
+will get you a file named "django-remember_me-0.1.1.tar.gz" which you can unpack
 (double-click on the file on most operating systems) to create a directory named
-"django-remember_me-0.1". Inside will be a script named "setup.py"; running::
+"django-remember_me-0.1.1". Inside will be a script named "setup.py"; running::
 
     python setup.py install
 
@@ -97,7 +97,7 @@ the main repository and apply them to your local copy.
 
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _pip: http://pypi.python.org/pypi/pip/
-.. _django-remember_me v0.1 package: http://pypi.python.org/pypi/django-remember_me/0.1
+.. _django-remember_me v0.1.1 package: http://pypi.python.org/pypi/django-remember_me/0.1.1
 .. _Mercurial: http://www.selenic.com/mercurial/wiki/
 
 
@@ -180,17 +180,17 @@ other details.
 Development
 ===========
 
-The `latest released version`_ of this application is v0.1, and is quite stable;
-it's already been deployed on a number of sites. You can also obtain the absolute freshest
-code from `the development repository_`, but be warned that the development code
-may not always be backwards-compatible, and may well contain bugs that haven't
-yet been fixed.
+The `latest released version`_ of this application is v0.1.1, and is quite
+stable; it's already been deployed on a number of sites. You can also obtain the
+absolute freshest code from `the development repository_`, but be warned that
+the development code may not always be backwards-compatible, and may well
+contain bugs that haven't yet been fixed.
 
-This document covers the v0.1 release of django-remember_me; new features
+This document covers the v0.1.1 release of django-remember_me; new features
 introduced in the development trunk will be added to the documentation at the
 time of the next packaged release.
 
-.. _latest released version: http://pypi.python.org/pypi/django-remember_me/0.1
+.. _latest released version: http://pypi.python.org/pypi/django-remember_me/0.1.1
 .. _the development repository: http://code.google.com/p/django-remember-me/source/browse/
 
 
