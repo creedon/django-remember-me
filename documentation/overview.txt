@@ -22,7 +22,7 @@ browser sessions and will need to login when the website is next accessed.
 This can be useful for users if they will be accessing your website from
 insecure locations such as in internet cafe or public library.
 
-Of course some disipline still needs to be used by the user when in an insecure
+Of course some discipline still needs to be used by the user when in an insecure
 situation, they will need to have not checked the Remember Me checkbox and quit
 the web browser to log out of the website.
 
@@ -197,7 +197,8 @@ time of the next packaged release.
 Changes from previous versions
 ==============================
 
-None.
+v0.1 was missing a RequestSite import which would cause an error you didn't use
+the sites framework.
 
 
 Dependencies
@@ -206,7 +207,7 @@ Dependencies
 The only dependencies for this application are a functioning install of Django
 v1.0 or newer and, of course, a Django project in which you'd like to use it.
 
-Your Django project should have ``django.contrib.auth`` and optionallly
+Your Django project should have ``django.contrib.auth`` and optionally
 ``django.contrib.sites`` in its ``INSTALLED_APPS`` setting.
 
 
