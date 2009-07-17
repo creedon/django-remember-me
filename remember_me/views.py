@@ -1,18 +1,28 @@
 from django.contrib.auth import REDIRECT_FIELD_NAME
 from django.views.decorators.cache import never_cache
 
+from remember_me.forms import AuthenticationRememberMeForm
+
 
 def remember_me_login (
     request,
     template_name = 'registration/login.html',
     redirect_field_name = REDIRECT_FIELD_NAME,
+    form_class = AuthenticationRememberMeForm,
     ):
 
     """
-    Based on code cribbed from django/trunk/django/contrib/auth/views.py
+    Based on login view cribbed from
+    django/trunk/django/contrib/auth/views.py
     
-    Displays the login form with a remember me checkbox and handles the login
-    action.
+    Displays the login form with a remember me checkbox and handles the
+    login action.
+    
+    In addition to the standard parameters of Django's login view
+    function there is a form_class parameter.  By default,
+    ``remember_me.forms.AuthenticationRememberMeForm`` will be used as
+    the login form; to change this, pass a different form class as the
+    ``form_class`` parameter.
     
     """
     
@@ -22,13 +32,11 @@ def remember_me_login (
     from django.shortcuts import render_to_response
     from django.template import RequestContext
     
-    from remember_me.forms import AuthenticationRememberMeForm
-    
     redirect_to = request.REQUEST.get ( redirect_field_name, '' )
     
     if request.method == "POST":
     
-        form = AuthenticationRememberMeForm ( data = request.POST, )
+        form = form_class ( data = request.POST, )
         
         if form.is_valid ( ):
         
@@ -54,7 +62,7 @@ def remember_me_login (
             
     else:
     
-        form = AuthenticationRememberMeForm ( request, )
+        form = form_class ( request, )
         
     request.session.set_test_cookie ( )
     

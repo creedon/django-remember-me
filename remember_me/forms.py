@@ -6,7 +6,8 @@ from django.utils.translation import ugettext_lazy as _
 class AuthenticationRememberMeForm ( AuthenticationForm ):
 
     """
-    Subclass of Django ``AuthenticationForm`` which adds a remember me checkbox.
+    Subclass of Django ``AuthenticationForm`` which adds a remember me
+    checkbox.
     
     """
     
