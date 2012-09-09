@@ -7,7 +7,7 @@ A Django_ application that provides a login form with a Remember Me checkbox.
 Use this in place of `django.contrib.auth.views.login`_.
 
 .. _Django: http://www.djangoproject.com/
-.. _views.login documentation: http://docs.djangoproject.com/en/dev/topics/auth/#django.contrib.auth.login
+.. _views.login documentation: http://docs.djangoproject.com/en/1.2/topics/auth/#django.contrib.auth.login
 
 
 Overview
@@ -31,7 +31,8 @@ Installation
 ============
 
 In order to use django-remember_me, you will need to have a functioning
-installation of Django v1.0 or newer.
+installation of Django v1.2.7 or newer in the 1.2.X series.  It will probably
+work on Django versions 1.2.4 - 1.2.6 but those versions haven't been tested.
 
 There are three basic ways to install django-remember_me: automatically
 installing a package using Python's package-management tools, manually
@@ -63,14 +64,14 @@ you'll be able to type::
 And you'll be done.
 
 
-Manually installing the v0.1.1 package
+Manually installing the v0.2d0 package
 -----------------------------------
 
 If you'd prefer to do things the old-fashioned way, you can manually download
-the `django-remember_me v0.1.1 package`_ from the Python Package Index. This
-will get you a file named "django-remember_me-0.1.1.tar.gz" which you can
+the `django-remember_me v0.2d0 package`_ from the Python Package Index. This
+will get you a file named "django-remember_me-0.2.tar.gz" which you can
 unpack (double-click on the file on most operating systems) to create a
-directory named "django-remember_me-0.1.1". Inside will be a script named
+directory named "django-remember_me-0.2". Inside will be a script named
 "setup.py"; running::
 
     python setup.py install
@@ -99,7 +100,7 @@ the main repository and apply them to your local copy.
 
 .. _easy_install: http://peak.telecommunity.com/DevCenter/EasyInstall
 .. _pip: http://pypi.python.org/pypi/pip/
-.. _django-remember_me v0.1.1 package: http://pypi.python.org/pypi/django-remember_me/0.1.1
+.. _django-remember_me v0.2d0 package: http://pypi.python.org/pypi/django-remember_me/0.2
 .. _Mercurial: http://www.selenic.com/mercurial/wiki/
 
 
@@ -138,7 +139,7 @@ An example of this template is not provided; you will need to create it
 yourself. See the `views.login documentation`_ for details on available context
 variables.
 
-.. _views.login documentation: http://docs.djangoproject.com/en/dev/topics/auth/#django.contrib.auth.views.login
+.. _views.login documentation: http://docs.djangoproject.com/en/1.2/topics/auth/#django.contrib.auth.views.login
 
 
 How it works
@@ -161,7 +162,7 @@ Forms
 Subclass of ``AuthenticationForm``_ which adds a remember me checkbox.
 
 
-.. _AuthenticationForm: http://docs.djangoproject.com/en/dev/topics/auth/#django.contrib.auth.forms.AuthenticationForm
+.. _AuthenticationForm: http://docs.djangoproject.com/en/1.2/topics/auth/#django.contrib.auth.forms.AuthenticationForm
 
 
 Views
@@ -179,8 +180,8 @@ Log in a user.  This view is a slightly modified version of
 Me feature.  Please see ``view.login documentation``_ for context variables and
 other details.
 
-.. _Django's login view: http://code.djangoproject.com/browser/django/trunk/django/contrib/auth/views.py
-.. _ view.login documentation: http://docs.djangoproject.com/en/dev/topics/auth/#django.contrib.auth.views.login
+.. _Django's login view: https://github.com/django/django/blob/1.2.7/django/contrib/auth/views.py#L25
+.. _ view.login documentation: http://docs.djangoproject.com/en/1.2/topics/auth/#django.contrib.auth.views.login
 
 
 Development
@@ -192,7 +193,7 @@ the absolute freshest code from `the development repository_`, but be warned
 that the development code may not always be backwards-compatible, and may well
 contain bugs that haven't yet been fixed.
 
-This document covers the v0.1.1 release of django-remember_me; new features
+This document covers the v0.2d0 release of django-remember_me; new features
 introduced in the development trunk will be added to the documentation at the
 time of the next packaged release.
 
@@ -203,15 +204,18 @@ time of the next packaged release.
 Changes from previous versions
 ==============================
 
-v0.1 was missing a RequestSite import which would cause an error you didn't use
-the sites framework.
+v0.1.1 added ability to specify a different form class for remember_me_login
+view function
+
+v0.1 was missing a RequestSite import which would cause an error if you didn't
+use the sites framework.
 
 
 Dependencies
 ============
 
 The only dependencies for this application are a functioning install of Django
-v1.0 or newer and, of course, a Django project in which you'd like to use it.
+v1.2. or newer and, of course, a Django project in which you'd like to use it.
 
 Your Django project should have ``django.contrib.auth`` and optionally
 ``django.contrib.sites`` in its ``INSTALLED_APPS`` setting.
